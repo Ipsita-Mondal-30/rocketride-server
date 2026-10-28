@@ -2,7 +2,7 @@
   "name": "@rocketride/world-ui",
   "version": "1.2.0",
   "private": true,
-  "description": "Hello World demo application — reference MF remote app",
+  "description": "Hello World demo application \u2014 reference MF remote app",
   "license": "MIT",
   "appManifest": {
     "id": "rocketride.world",
@@ -18,9 +18,9 @@
     "authenticated": false
   },
   "scripts": {
-    "build": "rsbuild build",
-    "build:prod": "rsbuild build --env-mode production",
-    "dev": "rsbuild dev",
+    "build": "node init && rsbuild build",
+    "build:prod": "node init && rsbuild build --env-mode production",
+    "dev": "node init && rsbuild dev",
     "typecheck": "tsc --noEmit"
   },
   "browserslist": [
