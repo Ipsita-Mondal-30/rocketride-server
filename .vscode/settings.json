@@ -1,50 +1,23 @@
 {
-  "cmake.configureOnOpen": false,
-  "cmake.sourceDirectory": "${workspaceFolder}/packages/server",
-  "explorer.excludeGitIgnore": true,
-  "files.watcherExclude": {
-    "**/build/**": true,
-    "**/dist/**": true
-  },
-  "python.analysis.exclude": [
-    "**/.*",
-    "**/__pycache__",
-    "**/dist",
-    "**/build",
-    "**/downloads",
-    "**/node_modules"
-  ],
-  "python.analysis.extraPaths": [
-    "packages/server/engine-lib/rocketlib-python/lib",
-    "packages/ai/src"
-  ],
   "search.exclude": {
-    "**/.git": true,
-    "**/.mypy_cache": true,
-    "**/.pytest_cache": true,
-    "**/.ruff_cache": true,
-    "**/__pycache__": true,
-    "**/build": true,
-    "**/dist": true,
-    "**/downloads": true,
-    "**/node_modules": true
+    "**/.sst": true
+  },
+  "task.allowAutomaticTasks": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "debug.openDebug": "neverOpen",
+  "problems.autoReveal": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.inheritEnv": false,
+  "jestrunner.configPath": "jest.unit.config.cjs",
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
   }
-  // Enable java settings if needed
-  // "java.configuration.runtimes": [
-  //   {
-  //     "name": "JavaSE-17",
-  //     "path": "<project-full-path>/build/java/jdk",
-  //     "default": true
-  //   }
-  // ],
-  // "java.configuration.updateBuildConfiguration": "automatic",
-  // "java.jdt.ls.java.home": "<project-full-path>/build/java/jdk",
-  // "java.import.exclusions": [
-  //   "**/node_modules/**",
-  //   "**/.metadata/**",
-  //   "**/archetype-resources/**",
-  //   "**/META-INF/maven/**",
-  //   "**/build/**",
-  //   "**/dist/**"
-  // ]
 }
